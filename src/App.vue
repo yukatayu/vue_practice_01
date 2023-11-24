@@ -4,6 +4,11 @@ import HelloWorld from './components/HelloWorld.vue'
 
 <template>
   <div>
+    <v-btn prepend-icon="mdi-vuetify" color="primary"> ボタンだよ！ </v-btn>
+  </div>
+  普通の文字。
+  <v-chip color="primary"> Chip </v-chip>
+  <div>
     <a href="https://vitejs.dev" target="_blank">
       <img src="/vite.svg" class="logo" alt="Vite logo" />
     </a>
