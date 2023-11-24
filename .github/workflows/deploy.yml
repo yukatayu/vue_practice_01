@@ -1,6 +1,6 @@
 name: deployer_GitHub_Pages
 on:
-  pull_request:
+  push:
     branches: [ main ]
 
 env:
@@ -19,11 +19,11 @@ jobs:
 
       - name: dependencies
         run: |
-          yarn --frozen-lockfile
-          yarn build
+          npm ci
+          npm run build
 
       - name: deploy
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./docs
+          publish_dir: ./dist

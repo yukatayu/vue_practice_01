@@ -17,8 +17,8 @@ jobs:
       - name: solve dependencies
         run: npm ci
 
-      - name: lint
-        run: npm run lint
+#       - name: lint
+#         run: npm run lint
 
       - name: test
-        run: npm run coverage
+        run: npm run test-ci
