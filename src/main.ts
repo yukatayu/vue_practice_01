@@ -1,9 +1,9 @@
 import { createApp } from 'vue'
-import './style.scss'
 import App from './App.vue'
 
 // Vuetify
 import 'vuetify/styles'
+import './style.scss'
 import { createVuetify } from 'vuetify'
 import * as vuetify_components from 'vuetify/components'
 import * as vuetify_directives from 'vuetify/directives'
